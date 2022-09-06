@@ -17,15 +17,15 @@ namespace Linq_Demo
             MyList.Add(40);
             MyList.Add(50);
 
-            //var u = MyList.Where(x => x > 60).Take(2).ToList();      //it will print 200 and 600
+            var u = MyList.Where(x => x > 60).Take(2).ToList();      //it will print 200 and 600
 
-            //var k = MyList.TakeWhile(x => x < 60).ToList();             //it will give 0 because before 60 there is no value which is less then 60
+            var k = MyList.TakeWhile(x => x < 60).ToList();             //it will give 0 because before 60 there is no value which is less then 60
 
-            var k = MyList.Skip(3).ToList();                    //it will skip start 3 numbers and print 40 and 50
+            var i = MyList.Skip(3).ToList();                    //it will skip start 3 numbers and print 40 and 50
 
             var q = MyList.SkipWhile(x => x > 40).ToList();     //it will skip all the elements that statisfies the condition  o/p is 40 and 50
 
-           // var h = MyList.Distinct().ToList();                    //does not print the duplicate values
+            var h = MyList.Distinct().ToList();                    //does not print the duplicate values
 
             //var isdata = MyList.Any();                           // to check whether the list contains data or not
 
